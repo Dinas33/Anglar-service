@@ -1,0 +1,24 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<div class="content">
+  <div class="card-container">
+  
+
+  <div class="card"  *ngFor="let p of product" >
+    <div class="img-box">
+        <img [src]="p.img" alt="">
+       
+    </div>
+    <div class="details">
+        <h3>{{p.name}}</h3>
+        <h4>{{p.price}} $</h4>
+        <p> {{p.description}}</p>
+         
+    </div>
+    
+   </div>
+   
+
+  
+ </div>
+</div>

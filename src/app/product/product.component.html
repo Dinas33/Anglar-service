@@ -1,0 +1,104 @@
+-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<div class="all">
+    <div class="menu">
+        <ul>
+            <li class="porfile">
+                <div class="img-box">
+                    <img src="porfile.jpg" alt="porifile">
+                </div>
+                <h2>dina ahmed</h2>
+
+            </li>
+            <li>
+                <a class="active" href="#">
+                    <i class="fas fa-home" ></i>
+                    <p>dashboard</p>
+                </a>
+            </li>
+
+             <li>
+                <a routerLink="/category">
+                    <i class="fas fa-table" ></i>
+                    <p>category</p>
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <i class="fas fa-table" ></i>
+                    <p>products</p>
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <i class="fas fa-chart-bar" ></i>
+                    <p>chart</p>
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <i class="fas fa-pen-alt" ></i>
+                    <p>posts</p>
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <i class="fas fa-star" ></i>
+                    <p>favorite</p>
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <i class="fas fa-cog" ></i>
+                    <p>setings</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt" ></i>
+                    <p>log out</p>
+                </a>
+            </li>
+
+                    
+
+        </ul>
+    </div>
+    <div class="content">
+        
+        <div class="title-info">
+            <p>pruducts</p>
+        <i class="fas fa-chart-bar"></i>
+        </div>
+
+        <div class="data-info"  >
+
+              <div *ngFor="let product of product"  class="box" >
+    
+                <img [src]="product.img" alt="photo">
+                <div class="data">
+                    <p>{{product.name}}</p>
+                    <span>{{product.price}}</span>
+                    </div>
+                    <a  [routerLink]="['/detail',product.id]"class="detail" style="color:white ;">details</a>
+                </div>
+                  
+        </div>
+        
+  
+   </div>
+
+
+</div>
+
+
+
+    
+
+
+
+
+    
+
+
+

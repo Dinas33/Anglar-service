@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+}
+.all{
+    display: flex;
+    
+    
+   
+}
+
+.menu{
+    width: 62px;
+    height: 100vh;
+    background-color: rgb(8, 85, 121);
+    text-align:center ;
+    padding: 10px;
+    overflow: hidden;  
+    transition: .5s; 
+   
+    
+}
+.menu:hover{
+    width: 400px;
+}
+.porfile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+   
+}
+.porfile h2{
+    text-transform: capitalize;
+    color: white;
+}
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink:0;
+}
+.img-box img{
+    width: 100%;
+    
+}
+ul{
+    list-style: none;
+    justify-content: center;
+    position: relative;
+    height: 95%;
+    margin-top: 10px;
+}
+ul li  a{
+    
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    gap: 30px;
+    border-radius: 8px;
+    transition: .5s;
+}
+ul li  a:hover, .active, .data-info .box:hover {
+    background-color: rgba(143, 152, 155, 0.808);
+
+}
+.log-out{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a {
+    background-color: rgba(230, 8, 8, 0.836);
+}
+ul li a i{
+    font-size: 30px;
+    color: white;
+}
+.content { 
+     width:100%;
+     margin: 10px;  
+
+}
+.title-info{
+    background-color: rgb(9, 106, 151);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+     font-size: 30px;
+
+}
+.title-info i  , p {
+  color: white;
+
+}
+.data-info{
+   
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+  
+   
+  
+
+   
+}
+.data-info .box{
+    display: flex;
+    background: rgb(8, 85, 121);
+    border-radius: 10px;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    justify-content:space-around;
+    align-items: center;
+    
+   
+
+}
+.data-info .box img{
+   width: auto;
+    height: 90%;
+border: 3px solid white;
+
+
+
+
+}
+
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+    color: white;
+
+}
